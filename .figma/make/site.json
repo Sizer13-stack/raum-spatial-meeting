@@ -1,0 +1,10 @@
+{
+  "description": "This web application allows users to upload and reference images for projects, streamlining collaboration and enhancing visual communication.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-bg-canvas: #0B0D12;
+  --color-bg-sidebar: #10131A;
+  --color-bg-surface: #151821;
+  --color-bg-elevated: #1D212C;
+  --color-border: #2A2F3A;
+  --color-text-primary: #F5F7FA;
+  --color-text-secondary: #9CA3AF;
+  --color-accent: #8B7CFF;
+  --color-accent-dim: rgba(139, 124, 255, 0.15);
+  --color-success: #5EE6A8;
+  --color-blue: #63B3ED;
+  --color-warning: #F4C95D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0B0D12;
+  color: #F5F7FA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2A2F3A; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #3A4050; }
+
+/* Spatial canvas dot grid */
+.dot-grid {
+  background-image: radial-gradient(circle, #2A2F3A 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Transitions */
+.transition-panel {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+/* Focus */
+button:focus-visible, input:focus-visible, a:focus-visible {
+  outline: 2px solid #8B7CFF;
+  outline-offset: 2px;
+}
